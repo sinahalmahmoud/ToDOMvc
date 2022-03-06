@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font: 0.75rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #f5f5f5;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: rgba(175, 47, 47, 0.15);
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+main {
+  padding: 28px 0 30px;
+  margin: 30px 0 30px 0;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+li {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #e6e6e6;
+}
+
+.todo-text {
+  margin-left: 20px;
+}
+
+.task-box input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: #fff;
+  cursor: pointer;
+  border: solid 1px rgb(120, 118, 118);
+  appearance: none;
+  -webkit-appearance: none;
+  
+}
+
+.toggle:checked {
+  transform: rotate(45deg) scale(1);
+  left: 8px;
+  width: 6px;
+  height: 15px;
+  border: solid green;
+  border-width: 0 1px 1px 0;
+  border-radius: 0;
+}
+
+.task-input {
+  display: flex;
+}
+
+.input_text {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  
+  font-style: italic;
+  outline: none;
+  color: #777;
+  padding: 0 10px 20px 15px;
+  border-bottom: none;
+}
+
+.toggle:checked+p{
+  text-decoration: line-through;
+    color: #d9d9d9;
+}
+.icon-chevron-down {
+  -webkit-appearance: none;
+
+  color: #737373;
+
+  padding-left: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.icon-chevron-down:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.icon-close {
+  color: red;
+}
+
+.task-input input::placeholder {
+  font-style: italic;
+
+  color: #e6e6e6;
+}
+
+.remove-button {
+  background-color: #fff;
+  margin-left: auto;
+  border: none;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+footer {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+#buttons {
+  font-size: 15px;
+}
+
+p {
+  float: left;
+  padding-left: 5px;
+}
+span {
+  float: left;
+}
+
+.active,
+.completed,
+.showall {
+  color: inherit;
+  text-align: center;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+a:focus{border-color: rgba(175, 47, 47, 0.1);}
+
+a:hover {
+  border-color: rgba(175, 47, 47, 0.1);
+}
+
+.clearall {
+  text-decoration: none;
+  color: inherit;
+  float: right;
+}
+
+.clearall:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  main{
+
+    margin: 10px auto;
+      width: 84%;
+      clear: both;
+    }
+
+  #buttons {
+    font-size: 12px;
+    
+  }
+
+
+}

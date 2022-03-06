@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List App </title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="screen only and (max-width: 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="icomoon/style.css" />
+  </head>
+  <body>
+    <h1>todos</h1>
+
+    <main>
+      <form class="task-input">
+        <input type="checkbox" class="icon-chevron-down" />
+        <input class="input_text" type="text" placeholder="Add a new task" />
+      </form>
+
+      <ul class="task-box">
+        <template id="todo-template">
+          <li>
+            <input type="checkbox" class="toggle" />
+
+            <p class="todo-text"></p>
+            <button class="remove-button">❌</button>
+          </li>
+        </template>
+      </ul>
+
+      <footer class="buttons">
+        
+        <span id="uncompleted"></span>
+        <p>Items left</p>
+        <a href="#" class="active">Active</a>
+        <a href="#" class="completed">Completed</a>
+        <a href="#" class="showall">ShowAll</a>
+        <a href="#" class="clearall">DeleteCompleted</a>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
